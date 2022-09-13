@@ -10,36 +10,31 @@ const go = () => {
 
 <template>
   <div>
-    <div i-carbon-campsite text-4xl inline-block />
+    <i-noto-paintbrush />
+
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
+        Vitesse Pinceau
       </a>
     </p>
+
     <p>
-      <em text-sm op75>Opinionated Vite Starter Template</em>
+      <em>Opinionated Vite Starter Template</em>
     </p>
 
-    <div py-4 />
+    <div spacer />
 
     <input
-      id="input"
       v-model="name"
       placeholder="What's your name?"
       type="text"
       autocomplete="false"
-      p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
       @keydown.enter="go"
     >
 
     <div>
       <button
-        class="m-3 text-sm btn"
+        class="btn"
         :disabled="!name"
         @click="go"
       >
@@ -48,3 +43,42 @@ const go = () => {
     </div>
   </div>
 </template>
+
+<style scoped lang="ts">
+css({
+  div: {
+    color: '{colors.black}',
+    '.dark &': {
+      color: '{colors.white}',
+    },
+  },
+  svg: {
+    fontSize: '2.5rem',
+    lineHeight: '2.5rem',
+    display: 'inline-block'
+  },
+  '[spacer]': {
+    marginTop: '2rem'
+  },
+  em: {
+    fontSize: '0.875rem',
+    lineHeight: '1.25rem',
+    opacity: '0.75',
+  },
+  input: {
+    padding: '0.5rem 1rem',
+    width: '250px',
+    textAlign: 'center',
+    backgroundColor: 'transparent',
+    borderRadius: '0.25rem',
+    border: '1px solid {colors.gray.200}',
+    outline: 'none',
+    '.dark &': {
+      borderColor: '{colors.gray.700}',
+    },
+    '&:active': {
+      outline: 'none'
+    }
+  }
+})
+</style>

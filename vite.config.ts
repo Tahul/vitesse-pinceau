@@ -6,7 +6,9 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import Unocss from 'unocss/vite'
+import Pinceau from 'pinceau/vite'
+import Icons from 'unplugin-icons/vite'
+import IconResolver from 'unplugin-icons/resolver'
 
 export default defineConfig({
   resolve: {
@@ -40,11 +42,17 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
+      resolvers: [
+        IconResolver()
+      ]
     }),
 
-    // https://github.com/antfu/unocss
-    // see unocss.config.ts for config
-    Unocss(),
+    Pinceau({}),
+
+    Icons({
+      autoInstall: true,
+      compiler: 'vue3'
+    })
   ],
 
   // https://github.com/vitest-dev/vitest

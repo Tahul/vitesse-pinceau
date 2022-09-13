@@ -1,15 +1,43 @@
 <template>
-  <nav text-xl mt-6 inline-flex gap-2>
-    <button icon-btn @click="toggleDark()">
-      <div dark:i-carbon-moon i-carbon-sun />
+  <nav>
+    <button class="icon-btn" @click="toggleDark()">
+      <i-carbon-moon class="light-button" />
+      <i-carbon-sun class="dark-button" />
     </button>
 
     <a
-      icon-btn i-carbon-logo-github
+      class="icon-btn"
       rel="noreferrer"
       href="https://github.com/antfu/vitesse-lite"
       target="_blank"
       title="GitHub"
-    />
+    >
+    <i-carbon-logo-github />
+    </a>
   </nav>
 </template>
+
+<style scoped lang="ts">
+css({
+  nav: {
+    fontSize: '1rem',
+    marginTop: '1.5rem',
+    display: 'inline-flex',
+    gap: '0.5rem',
+    '.dark-button': {
+      display: 'block'
+    },
+    '.light-button': {
+      display: 'none'
+    },
+    ".dark &": {
+      '.dark-button': {
+        display: 'none'
+      },
+      '.light-button': {
+        display: 'block'
+      },
+    },
+  },
+})
+</style>

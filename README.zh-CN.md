@@ -26,7 +26,7 @@
 
 - 📦 [组件自动化加载](./src/components)
 
-- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
+- 🎨 [Pinceau](https://github.com/Tahul/pinceau) - 为 Vue 制作的零运行时 CSS-in-JS 框架。
 
 - 😃 [各种图标集为你所用](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
@@ -54,12 +54,11 @@
 
 ### UI 框架
 
-- [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
+- [Pinceau](https://github.com/Tahul/pinceau) - 为 Vue 制作的零运行时 CSS-in-JS 框架。
 
 ### Icons
 
 - [Iconify](https://iconify.design) - 使用任意的图标集，浏览：[🔍Icônes](https://icones.netlify.app/)
-- [UnoCSS 的纯 CSS 图标方案](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 ### 插件
 

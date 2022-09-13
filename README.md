@@ -25,7 +25,7 @@
 
 - 📦 [Components auto importing](./src/components)
 
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+- 🎨 [Pinceau](https://github.com/Tahul/pinceau) - A zero-runtime CSS-in-JS framework made for Vue.
 
 - 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
@@ -55,12 +55,11 @@ See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
 
 ### UI Frameworks
 
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+- [Pinceau](https://github.com/Tahul/pinceau) - A zero-runtime CSS-in-JS framework made for Vue.
 
 ### Icons
 
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 ### Plugins
 

@@ -5,17 +5,17 @@ const router = useRouter()
 
 <template>
   <div>
-    <div i-carbon-pedestrian text-4xl inline-block />
+    <i-noto-woman-artist />
     <p>
       Hi, {{ props.name }}
     </p>
-    <p text-sm op50>
+    <p>
       <em>Dynamic route!</em>
     </p>
 
     <div>
       <button
-        class="btn m-3 text-sm mt-8"
+        class="btn"
         @click="router.back()"
       >
         Back
@@ -23,3 +23,26 @@ const router = useRouter()
     </div>
   </div>
 </template>
+
+
+<style scoped lang="ts">
+css({
+  svg: {
+    fontSize: '2.5rem',
+    lineHeight: '2.5rem',
+    display: 'inline-block'
+  },
+  p: {
+    em: {
+      fontSize: '0.875rem',
+      lineHeight: '1.25rem',
+      opacity: '0.5',
+    },
+  },
+  button: {
+    margin: '0.75rem',
+    fontSize: '0.75rem',
+    marginTop: '2rem',
+  }
+})
+</style>

@@ -6,9 +6,11 @@ const router = useRouter()
 <template>
   <div>
     <i-noto-woman-artist />
+
     <p>
       Hi, {{ props.name }}
     </p>
+
     <p>
       <em>Dynamic route!</em>
     </p>
@@ -23,7 +25,6 @@ const router = useRouter()
     </div>
   </div>
 </template>
-
 
 <style scoped lang="ts">
 css({

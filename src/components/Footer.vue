@@ -12,7 +12,7 @@
       target="_blank"
       title="GitHub"
     >
-    <i-carbon-logo-github />
+      <i-carbon-logo-github />
     </a>
   </nav>
 </template>

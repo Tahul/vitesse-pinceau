@@ -7,19 +7,24 @@
 
 <style lang="ts">
 css({
-  'body': {
-    fontFamily: '{fonts.sans}',
-    backgroundColor: '{colors.white}',
-    color: '{colors.gray.700}',
-    '.dark &': {
-      color: '{colors.gray.200}',
-      backgroundColor: '{colors.black}'
-    }
-  },
 
-  main: {
-    padding: '2.5rem 1.5rem',
-    textAlign: 'center',
+  '.icon-btn': {
+    color: '{colors.white}',
+    outline: 'none !important',
+    fontSize: '0.9em',
+    display: 'inline-block',
+    cursor: 'pointer',
+    userSelect: 'none',
+    opacity: '0.75',
+    transition: 'ease-in-out',
+    transitionDuration: '200ms',
+    transitionProperty: 'all',
+    svg: {
+      fontSize: '1.2rem',
+    },
+    '&:hover': {
+      opacity: '1',
+    },
   },
 
   '.btn': {
@@ -30,34 +35,30 @@ css({
     cursor: 'pointer',
     color: '{colors.white}',
     fontSize: '0.875rem',
-    backgroundColor: '{colors.gray.600}',
+    backgroundColor: '{colors.primary.600}',
     '&:hover': {
-      backgroundColor: '{colors.teal.700}'
+      backgroundColor: '{colors.secondary.700}'
     },
     '&:disabled': {
       cursor: 'default',
-      backgroundColor: '{colors.gray.600}',
+      backgroundColor: '{colors.primary.600}',
       opacity: '0.5'
     },
   },
 
-  '.icon-btn': {
-    outline: 'none !important',
-    fontSize: '0.9em',
-    display: 'inline-block',
-    cursor: 'pointer',
-    userSelect: 'none',
-    opacity: '0.75',
-    transition: 'ease-in-out',
-    transitionDuration: '200ms',
-    transitionProperty: 'all',
-    '&:hover': {
-      opacity: '1',
-      color: '{colors.teal.600}',
-    },
-    'svg': {
-      fontSize: '1.2rem'
+  'body': {
+    fontFamily: '{fonts.sans}',
+    backgroundColor: '{colors.white}',
+    color: '{colors.primary.700}',
+    '.dark &': {
+      color: '{colors.primary.200}',
+      backgroundColor: '{colors.black}'
     }
-  }
+  },
+
+  main: {
+    padding: '2.5rem 1.5rem',
+    textAlign: 'center',
+  },
 })
 </style>

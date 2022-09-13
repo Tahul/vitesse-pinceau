@@ -1,37 +1,37 @@
-import { defineTheme } from "pinceau"
+import { defineTheme } from 'pinceau'
 
 export default defineTheme({
   fonts: {
     sans: {
-      value: '\'DM Sans\''
+      value: '\'DM Sans\'',
     },
     serif: {
-      value: '\'DM Serif Display\''
+      value: '\'DM Serif Display\'',
     },
     mono: {
       value: '\'DM Mono\'',
-    }
+    },
   },
   colors: {
     white: {
-      value: '#FFFFFF'
+      value: '#FFFFFF',
     },
     black: {
-      value: '#121212'
+      value: '#121212',
     },
-    gray: {
-      50: { value: '#f9fafb' },
-      100: { value: '#f3f4f6' },
-      200: { value: '#e5e7eb' },
-      300: { value: '#d1d5db' },
-      400: { value: '#9ca3af' },
-      500: { value: '#6b7280' },
-      600: { value: '#4b5563' },
-      700: { value: '#374151' },
-      800: { value: '#1f2937' },
-      900: { value: '#111827' },
+    primary: {
+      50: { value: '#90F58C' },
+      100: { value: '#79F37D' },
+      200: { value: '#53F072' },
+      300: { value: '#2EED71' },
+      400: { value: '#13DF7B' },
+      500: { value: '#10B981' },
+      600: { value: '#0C8570' },
+      700: { value: '#075251' },
+      800: { value: '#031A1E' },
+      900: { value: '#000000' },
     },
-    teal: {
+    secondary: {
       50: { value: '#f0fdfa' },
       100: { value: '#ccfbf1' },
       200: { value: '#99f6e4' },
@@ -43,5 +43,5 @@ export default defineTheme({
       800: { value: '#115e59' },
       900: { value: '#134e4a' },
     },
-  }
+  },
 })

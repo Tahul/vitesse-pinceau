@@ -71,10 +71,10 @@ css({
     textAlign: 'center',
     backgroundColor: 'transparent',
     borderRadius: '0.25rem',
-    border: '1px solid {colors.gray.200}',
+    border: '1px solid {colors.primary.200}',
     outline: 'none',
     '.dark &': {
-      borderColor: '{colors.gray.700}',
+      borderColor: '{colors.primary.700}',
     },
     '&:active': {
       outline: 'none'

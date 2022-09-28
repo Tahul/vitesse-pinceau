@@ -16,10 +16,9 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+
   plugins: [
-    Vue({
-      reactivityTransform: true,
-    }),
+    Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
@@ -43,16 +42,16 @@ export default defineConfig({
     Components({
       dts: true,
       resolvers: [
-        IconResolver()
-      ]
+        IconResolver(),
+      ],
     }),
 
     Pinceau({}),
 
     Icons({
       autoInstall: true,
-      compiler: 'vue3'
-    })
+      compiler: 'vue3',
+    }),
   ],
 
   // https://github.com/vitest-dev/vitest

@@ -20,6 +20,8 @@ export default defineConfig({
   plugins: [
     Vue(),
 
+    Pinceau(),
+
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
 
@@ -45,8 +47,6 @@ export default defineConfig({
         IconResolver(),
       ],
     }),
-
-    Pinceau({}),
 
     Icons({
       autoInstall: true,

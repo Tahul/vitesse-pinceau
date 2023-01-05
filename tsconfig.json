@@ -22,8 +22,8 @@
     "paths": {
       "~/*": ["src/*"],
       "#pinceau/theme": ["./node_modules/.vite/pinceau/index.ts"],
-      "#pinceau/theme/flat": ["./node_modules/.vite/pinceau/flat.ts"],
-      "#pinceau/types": ["./node_modules/.vite/pinceau/types.ts"]
+      "#pinceau/types": ["./node_modules/.vite/pinceau/types.ts"],
+      "#pinceau/utils": ["./node_modules/.vite/pinceau/utils.ts"]
     }
   },
   "exclude": ["dist", "node_modules"],

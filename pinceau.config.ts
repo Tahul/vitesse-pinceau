@@ -12,6 +12,7 @@ export default defineTheme({
       value: '\'DM Mono\'',
     },
   },
+
   colors: {
     white: {
       value: '#FFFFFF',

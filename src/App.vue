@@ -7,9 +7,8 @@
 
 <style lang="ts">
 css({
-
   '.icon-btn': {
-    color: '{colors.white}',
+    color: '{color.white}',
     outline: 'none !important',
     fontSize: '0.9em',
     display: 'inline-block',
@@ -33,26 +32,26 @@ css({
     display: 'inline-block',
     borderRadius: '0.25rem',
     cursor: 'pointer',
-    color: '{colors.white}',
+    color: '{color.white}',
     fontSize: '0.875rem',
-    backgroundColor: '{colors.primary.600}',
+    backgroundColor: '{color.primary.600}',
     '&:hover': {
-      backgroundColor: '{colors.secondary.700}'
+      backgroundColor: '{color.secondary.700}'
     },
     '&:disabled': {
       cursor: 'default',
-      backgroundColor: '{colors.primary.600}',
+      backgroundColor: '{color.primary.600}',
       opacity: '0.5'
     },
   },
 
   'body': {
-    fontFamily: '{fonts.sans}',
-    backgroundColor: '{colors.white}',
-    color: '{colors.primary.700}',
+    fontFamily: '{font.sans}',
+    backgroundColor: '{color.white}',
+    color: '{color.primary.700}',
     '.dark &': {
-      color: '{colors.primary.200}',
-      backgroundColor: '{colors.black}'
+      color: '{color.primary.200}',
+      backgroundColor: '{color.black}'
     }
   },
 

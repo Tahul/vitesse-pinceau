@@ -23,7 +23,8 @@
       "~/*": ["src/*"],
       "#pinceau/theme": ["./node_modules/.vite/pinceau/index.ts"],
       "#pinceau/types": ["./node_modules/.vite/pinceau/types.ts"],
-      "#pinceau/utils": ["./node_modules/.vite/pinceau/utils.ts"]
+      "#pinceau/utils": ["./node_modules/.vite/pinceau/utils.ts"],
+      "pinceau.css": ["./node_modules/.vite/pinceau/theme/index.css"]
     }
   },
   "exclude": ["dist", "node_modules"],

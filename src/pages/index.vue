@@ -45,9 +45,9 @@ const go = () => name.value && router.push(`/hi/${encodeURIComponent(name.value)
 <style scoped lang="ts">
 css({
   div: {
-    color: '{colors.black}',
+    color: '{color.black}',
     '.dark &': {
-      color: '{colors.white}',
+      color: '{color.white}',
     },
   },
   svg: {
@@ -69,10 +69,10 @@ css({
     textAlign: 'center',
     backgroundColor: 'transparent',
     borderRadius: '0.25rem',
-    border: '1px solid {colors.primary.200}',
+    border: '1px solid {color.primary.200}',
     outline: 'none',
     '.dark &': {
-      borderColor: '{colors.primary.700}',
+      borderColor: '{color.primary.700}',
     },
     '&:active': {
       outline: 'none'

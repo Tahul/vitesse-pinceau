@@ -13,7 +13,7 @@ export default defineTheme({
     },
   },
 
-  colors: {
+  color: {
     white: {
       value: '#FFFFFF',
     },
